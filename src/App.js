@@ -5,6 +5,7 @@ import SideBar from "./components/Sidebar";
 import ButtonPage from './pages/ButtonPage'
 import ModalPage from "./pages/ModalPage";
 import TablePage from "./pages/TablePage";
+import CounterPage from "./pages/CounterPage";
 
 function App() {
    
@@ -19,14 +20,17 @@ function App() {
                 <Route path="/">
                     <DropdownPage />
                 </Route>
-                <Route path = "/buttons">
+                <Route path="/buttons">
                     <ButtonPage />
                 </Route>
-                <Route path = "/modal">
+                <Route path="/modal">
                     <ModalPage />
                 </Route>
-                <Route path = "/table">
+                <Route path="/table">
                     <TablePage />
+                </Route>
+                <Route path="/counter">
+                    <CounterPage initialCount={10} />
                 </Route>
             </div>
         </div>
